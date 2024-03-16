@@ -1,2 +1,3 @@
-##I don't know what this is but I need it for adding a theme I guess
-theme: jekyll-theme-architect
+remote_theme: pages-themes/architect@v0.2.0
+plugins:
+- jekyll-remote-theme
