@@ -10,6 +10,17 @@
       background-color: black;
       background-image: url("stars.png");/*Maybe make the stars dimmer at some point*/
     }
+    body::before {    
+      content: "";
+      background-image: url('clouds.png');
+      background-size: cover;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.75;
+    }
     .mainBox {/*I wonder if this will also effect link logos. If so, bad things will happen.*/
       text-align: center;
       background-color: white;
@@ -23,17 +34,7 @@
     ul li {
       margin-bottom: 10px;
     }
-    body::before {    
-      content: "";
-      background-image: url('clouds.png');
-      background-size: cover;
-      position: absolute;
-      top: 0px;
-      right: 0px;
-      bottom: 0px;
-      left: 0px;
-      opacity: 0.75;
-    }
+    
     /*The following was borrowed from DashNet. Hopefully this is fine. Since I'm promoting their site. Better to beg for forgiveness than to ask for permission.*/
     #title,#subtitle,.header {
       font-size:40px;
