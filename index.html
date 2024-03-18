@@ -5,18 +5,21 @@
   <script src="index.js"></script>
   <style>
     html {
-      font-family:Verdana;
+      /*font-family:Verdana;*/
     }
     body {
       background-color: black;
       background-image: url("clouds.png");
     }
-    div {
+    .main {
       text-align: center;
       background-color: white;
       width: 1200px;
       padding: 50px;
       margin: auto;
+    }
+    .externalGames {
+      color:#1F9AFE;
     }
     button {
       float: right;
@@ -26,18 +29,18 @@
 <body>
 
   <button type = "button" onclick="changeTheme()">&#x2600;</button>
-  <div>
+  <div class = "main">
     <h1>Lucian's Website</h1>
     <p>It's not ready yet. You should not be here.</p>
     
-    <p style="font-size: 20px; color:#1F9AFE;">
+    <p style="color:#1F9AFE;">
     <a href="test_page.html">Link to another page (For testing purposes)</a>
     </p>
     
     <p>In the meantime here are some fun websites to check out:</p>
     <p>Be wary of "download" or "Start" buttons because there are a lot of ads that try to disguise themselves as part of the website.</p>
     
-    <div style="font-size: 20px; color:#1F9AFE;">
+    <div class = "externalGames">
     <a href="https://neal.fun/">Neal's Website</a>
     <a href="https://orteil.dashnet.org/">Orteil's Website</a>
     <a href="https://willyoupressthebutton.com/">Will You Press The Button?</a>
