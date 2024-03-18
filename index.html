@@ -23,8 +23,16 @@
     ul li {
       margin-bottom: 10px;
     }
-    .clouds {
-      opacity: .5;
+    body::before {    
+      content: "";
+      background-image: url('clouds');
+      background-size: cover;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.75;
     }
     /*The following was borrowed from DashNet. Hopefully this is fine. Since I'm promoting their site. Better to beg for forgiveness than to ask for permission.*/
     #title,#subtitle,.header {
@@ -49,7 +57,6 @@
 </head>
 <body>
 
-  <img src="clouds.png" class="clouds"/><!--Problems happening here-->
   <button type = "button" onclick = "changeTheme()">&#x2600;</button>
   <div class = "mainBox">
     <h1>Lucian's Website</h1>
