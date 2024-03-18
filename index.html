@@ -3,14 +3,14 @@
 <head>
   <title>Lucian's Website</title>
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="icon" href="badApplefavicon.ico" type="image/x-icon">
+  <link rel="icon" href="badApplefavicon.ico" type="image/x-icon"><!--This will only work for Firefox. Supposedly. I haven't checked-->
   <script src="index.js"></script>
   <style>
     body {
       background-color: black;
-      background-image: url("stars.png");
+      background-image: url("stars.png");/*Maybe make the stars dimmer at some point*/
     }
-    .main {
+    .mainBox {/*I wonder if this will also effect link logos. If so, bad things will happen.*/
       text-align: center;
       background-color: white;
       width: 1200px;
@@ -26,13 +26,32 @@
     .clouds {
       opacity: .5;
     }
+    /*The following was borrowed from DashNet. Hopefully this is fine. Since I'm promoting their site. Better to beg for forgiveness than to ask for permission.*/
+    #title,#subtitle,.header {
+      font-size:40px;
+      color:#fff;
+      text-shadow:2px 2px 4px #000;
+      font-weight:bold;
+      font-family:'Oswald',Tahoma,sans-serif;
+      text-align:center;
+    }
+    #title
+    {
+      text-shadow:1px 1px 0px #96f,2px 2px 0px #639,4px 4px 4px #000;
+    }
+    #subtitle
+    {
+      font-size:15px;
+      opacity:0.75;
+      margin-bottom:8px;
+    }
   </style>
 </head>
 <body>
 
-  <img src="clouds.png" class="clouds"/>
+  <img src="clouds.png" class="clouds"/><!--Problems happening here-->
   <button type = "button" onclick = "changeTheme()">&#x2600;</button>
-  <div class = "main">
+  <div class = "mainBox">
     <h1>Lucian's Website</h1>
     <p>It's not ready yet. You should not be here.</p>
     
@@ -40,6 +59,9 @@
     
     <p>In the meantime here are some fun websites to check out:</p>
     <p>Be wary of "download" or "Start" buttons because there are a lot of ads that try to disguise themselves as part of the website.</p>
+
+    <div id="title">DashNet</div><!--Testing in progress-->
+    <div id="subtitle">video games and other fun things</div>
 
     <ul style = "list-style-type: none;">
       <li><a href="https://neal.fun/" target="_blank" rel="noreferrer noopener">Neal's Website</a></li>
