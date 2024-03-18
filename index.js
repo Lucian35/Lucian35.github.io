@@ -1,5 +1,5 @@
 function changeTheme() {
-  if (document.body.style.backgroundImage === "clouds.png") {
+  if (document.body.style.backgroundImage === "url('clouds.png')") {
     document.body.style.backgroundImage = "url('stars.png')";
   }
   else {
