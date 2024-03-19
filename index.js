@@ -6,10 +6,10 @@ function changeTheme() {
 
   if (currentOpacity === "1"){
     htmlElement.style.setProperty('--cloudOpacity', '0.4');
-    document.getElementsByClassName("mainBox").style.backgroundColor = "black";
+    document.querySelector(".mainBox").style.backgroundColor = "black";
   }
   else {
     htmlElement.style.setProperty('--cloudOpacity', '1');
-    document.getElementsByClassName("mainBox").style.backgroundColor = "white";
+    document.querySelector(".mainBox").style.backgroundColor = "white";
   }
 }
