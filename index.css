@@ -5,7 +5,7 @@ body {
   background-color: black;
   /*Maybe make the stars dimmer at some point*/
   background-image: url("images/stars.png");
-  position: relative;
+  /*position: relative;*/
 }
 body::before {    
   content: "";
