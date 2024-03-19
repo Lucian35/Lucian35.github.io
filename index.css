@@ -1,53 +1,55 @@
+html {
+  --cloudOpacity: "1";
+}
 body {
-      background-color: black;
-      /*Maybe make the stars dimmer at some point*/
-      background-image: url("stars.png");
-    }
-    body::before {    
-      content: "";
-      background-image: url('clouds.png');
-      background-size: cover;
-      position: absolute;
-      top: 0px;
-      right: 0px;
-      bottom: 0px;
-      left: 0px;
-      /*Something is weird here or in the javascript. I should actually learn how to code at some point.*/
-      --cloudOpacity: "1";
-      opacity: var(--cloudOpacity);
-      z-index: -1;
-    }
-    /*I wonder if this will also effect link logos. If so, bad things will happen.*/
-    .mainBox {
-      text-align: center;
-      background-color: white;
-      width: 1200px;
-      padding: 50px;
-      margin: auto;
-    }
-    button {
-      float: right;
-    }
-    ul li {
-      margin-bottom: 10px;
-    }
-    
-    /*The following was borrowed from DashNet. Hopefully this is fine. Since I'm promoting their site. Better to beg for forgiveness than to ask for permission.*/
-    #title,#subtitle,.header {
-      font-size:40px;
-      color:#fff;
-      text-shadow:2px 2px 4px #000;
-      font-weight:bold;
-      font-family:'Oswald',Tahoma,sans-serif;
-      text-align:center;
-    }
-    #title
-    {
-      text-shadow:1px 1px 0px #96f,2px 2px 0px #639,4px 4px 4px #000;
-    }
-    #subtitle
-    {
-      font-size:15px;
-      opacity:0.75;
-      margin-bottom:8px;
-    }
+  background-color: black;
+  /*Maybe make the stars dimmer at some point*/
+  background-image: url("stars.png");
+}
+body::before {    
+  content: "";
+  background-image: url('clouds.png');
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  /*Something is weird here or in the javascript. I should actually learn how to code at some point.*/
+  opacity: var(--cloudOpacity);
+  z-index: -1;
+}
+/*I wonder if this will also effect link logos. If so, bad things will happen.*/
+.mainBox {
+  text-align: center;
+  background-color: white;
+  width: 1200px;
+  padding: 50px;
+  margin: auto;
+}
+button {
+  float: right;
+}
+ul li {
+  margin-bottom: 10px;
+}
+
+/*The following was borrowed from DashNet. Hopefully this is fine. Since I'm promoting their site. Better to beg for forgiveness than to ask for permission.*/
+#title,#subtitle,.header {
+  font-size:40px;
+  color:#fff;
+  text-shadow:2px 2px 4px #000;
+  font-weight:bold;
+  font-family:'Oswald',Tahoma,sans-serif;
+  text-align:center;
+}
+#title
+{
+  text-shadow:1px 1px 0px #96f,2px 2px 0px #639,4px 4px 4px #000;
+}
+#subtitle
+{
+  font-size:15px;
+  opacity:0.75;
+  margin-bottom:8px;
+}
