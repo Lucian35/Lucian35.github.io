@@ -5,6 +5,7 @@ body {
   background-color: black;
   /*Maybe make the stars dimmer at some point*/
   background-image: url("images/stars.png");
+  position: relative;
 }
 body::before {    
   content: "";
@@ -27,9 +28,9 @@ body::before {
   margin: auto;
 }
 button {
-  float: right;
-  position: relative;
   top: 10px;
+  position: fixed;
+  right: 10px;
 }
 ul li {
   margin-bottom: 10px;
