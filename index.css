@@ -14,7 +14,7 @@ body {
       left: 0px;
       /*Something is weird here or in the javascript. I should actually learn how to code at some point.*/
       --cloudOpacity: "1";
-      opacity: var(--cloudOpacity, "1");
+      opacity: var(--cloudOpacity);
       z-index: -1;
     }
     /*I wonder if this will also effect link logos. If so, bad things will happen.*/
