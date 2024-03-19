@@ -1,11 +1,11 @@
 html {
   --cloudOpacity: "1";
+  position: relative;
 }
 body {
   background-color: black;
   /*Maybe make the stars dimmer at some point*/
   background-image: url("images/stars.png");
-  /*position: relative;*/
 }
 body::before {    
   content: "";
