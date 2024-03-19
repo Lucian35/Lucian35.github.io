@@ -15,7 +15,6 @@ body::before {
   right: 0px;
   bottom: 0px;
   left: 0px;
-  /*Something is weird here or in the javascript. I should actually learn how to code at some point.*/
   opacity: var(--cloudOpacity);
   z-index: -1;
 }
