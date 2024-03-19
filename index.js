@@ -1,12 +1,11 @@
+//I have no clue whats going on here
 function changeTheme() {
-  console.log("changeTheme function has been called");
-  console.log("This is the current background: " + document.body.style.backgroundImage)
-  if (document.body.style.backgroundImage === "url('clouds.png')") {
-    console.log("the background is clouds. Now changing to stars.");
-    document.body.style.backgroundImage = "url('stars.png')";
-    console.log("should be stars now.");
+  var r = document.querySelector('body::before');
+  var rs = getComputedStyle(r);
+  if (rs.getPropertyValue('--blue') === 1) {
+    r.style.setProperty('--cloudOpacity', 0.5);
   }
   else {
-    document.body.style.backgroundImage = "url('clouds.png')";
+    r.style.setProperty('--cloudOpacity', 1);
   }
 }
