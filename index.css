@@ -4,11 +4,11 @@ html {
 body {
   background-color: black;
   /*Maybe make the stars dimmer at some point*/
-  background-image: url("stars.png");
+  background-image: url("images/stars.png");
 }
 body::before {    
   content: "";
-  background-image: url('clouds.png');
+  background-image: url('images/clouds.png');
   background-size: cover;
   position: absolute;
   top: 0px;
