@@ -1,6 +1,5 @@
 html {
   --cloudOpacity: "1";
-  position: relative;
 }
 body {
   background-color: black;
@@ -19,7 +18,8 @@ body::before {
   opacity: var(--cloudOpacity);
   z-index: -1;
 }
-/*I wonder if this will also effect link logos. If so, bad things will happen.*/
+/*I wonder if this will also effect link logos. If so, bad 
+things will happen.*/
 .mainBox {
   text-align: center;
   background-color: white;
@@ -27,6 +27,9 @@ body::before {
   padding: 50px;
   margin: auto;
 }
+/*According to claude.ai this will be weird if the page gets 
+long enough to scroll, but claude is a dumb ai so maybe it 
+doesn't know what it's talking about*/
 button {
   top: 10px;
   position: fixed;
@@ -35,8 +38,28 @@ button {
 ul li {
   margin-bottom: 10px;
 }
-
-/*The following was borrowed from DashNet. Hopefully this is fine. Since I'm promoting their site. Better to beg for forgiveness than to ask for permission.*/
+/*I don't really understand how this works*/
+.roboto-condensed-light {
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+/*The following was borrowed from Neal.fun.*/
+.nealsLogo {
+  max-width: 210px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.nealsTagline {
+  font-size: 21px;
+  margin-top: 10px;
+  opacity: 0.7;
+  font-family: 'Roboto Condensed';
+}
+/*The following was borrowed from DashNet. Hopefully this is 
+fine. Since I'm promoting their site. Better to beg for 
+forgiveness than to ask for permission.*/
 #title,#subtitle,.header {
   font-size:40px;
   color:#fff;

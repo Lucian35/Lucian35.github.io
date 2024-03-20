@@ -5,8 +5,8 @@ function changeTheme() {
   const currentOpacity = getComputedStyle(htmlElement).getPropertyValue('--cloudOpacity');
 
   if (currentOpacity === "1"){
-    htmlElement.style.setProperty('--cloudOpacity', '0.4');
-    document.querySelector(".mainBox").style.backgroundColor = "black";
+    htmlElement.style.setProperty('--cloudOpacity', '0.3');
+    document.querySelector(".mainBox").style.backgroundColor = "lightGrey";
   }
   else {
     htmlElement.style.setProperty('--cloudOpacity', '1');
